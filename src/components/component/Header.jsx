@@ -8,25 +8,9 @@ import { Link } from "react-router-dom"
 
 function Header() {
     const [showChat, setshowChat] = useState(false);
-    console.log({showChat});
 
     function showChatText(){
-    //     setshowChat(!showChat)
-    //     console.log({showChat});
-    //     if(showChat){ return(
-    //             <div className="Header__hint">
-    //             <div className="Header__hint_container">
-    //             <img className="Jivo" src={Jivo} alt="Jivo" />
-    //             <p>Вы можете общаться с разработчиком на прямую ,
-    //     через чат “JIVO “ прикрепленный снизу(синиго цвета)
-    //     <br/>
-    //     А также вы можете через чат оформлять заказ , 
-    //     пишите в чат ХОЧУ САЙТ и вам отправят документ с 
-    //     образцом ТЗ(техническое задание)</p>
-    //             </div>
-    //             </div>
-    //         )
-    // }
+        setshowChat(!showChat)
 }
 
 
@@ -48,7 +32,17 @@ function Header() {
         <div className="Header__conn">
         <div className="Header__conn_chat">
         <img className="Chat" src={Chat} alt="Chat" onClick={showChatText} />
-        {showChat}
+        {showChat && <div className="Header__hint">
+                <img className="Jivo" src={Jivo} alt="Jivo" />
+                <div className="Header__hint_container">
+                <p>Вы можете общаться с разработчиком на прямую ,
+        через чат “JIVO “ прикрепленный снизу(синиго цвета)
+        <br/>
+        А также вы можете через чат оформлять заказ , 
+        пишите в чат ХОЧУ САЙТ и вам отправят документ с 
+        образцом ТЗ(техническое задание)</p>
+                </div>
+            </div> }
         </div>
         <div className="Header__conn_tel">
         <img className="Tel" src={Tel} alt="Tel" />

@@ -91,8 +91,8 @@ return (
         <div className="Points__plus">
         <div className="Center">
         <h3>Почему выбирают нас</h3>
-        {arrayPoints.map((arrayPoints, index) =>
-            <div className="Points" key={index}>
+        {arrayPoints.map(arrayPoints =>
+            <div className="Points" key={arrayPoints.id}>
 <span>{arrayPoints.id}</span><p>{arrayPoints.value}</p>
 </div>
         )}
@@ -104,8 +104,8 @@ return (
     <div className="Stages__container">
     <h3>Этапы разработки сайта</h3>  
     <div className="Stages">
-        {arrayStages.map((arrayStages, index) =>
-        <div className="Stage bg-blure">
+        {arrayStages.map(arrayStages =>
+        <div className="Stage bg-blure" key={arrayStages.id}>
             <span>{arrayStages.id}</span><p>{arrayStages.value}</p>
             </div>
         )}

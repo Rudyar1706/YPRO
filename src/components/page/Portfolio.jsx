@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
 function Portfolio() {
@@ -13,15 +14,15 @@ function Portfolio() {
         <div className="Portfolio__container bg-blure">
 <h3>Портфолио</h3>
 <div className="Portfolio__site">
-{arraySite.map((arraySite, index) =>
-    <div className="Site bg-blure" key={index}>
+{arraySite.map(arraySite =>
+    <div className="Site bg-blure" key={arraySite.id}>
     <h4>{arraySite.nameSite}</h4>
     <p>{arraySite.text}</p>
-    <a href={arraySite.url} target="_blank">
+    <Link href={arraySite.url} target="_blank">
     <div className="Button">
     Посетить
     </div>
-    </a>
+    </Link>
     </div>)}
 
 

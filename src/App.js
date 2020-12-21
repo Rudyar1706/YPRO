@@ -2,7 +2,7 @@ import Header from './components/component/Header'
 import Section from './components/component/Section'
 import Footer from './components/component/Footer'
 import { Route } from 'react-router-dom';
-import Portfolio from './components/page/Portfolio';
+import Portfolio from './components/page/Portfolio.jsx';
 
 function App() {
   return (
