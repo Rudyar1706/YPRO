@@ -1,12 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Logo from '../../components/svg/LOGOYPRO.svg'
 import Chat from '../../components/svg/comment.svg'
 import Tel from '../../components/svg/phone.svg'
+import Jivo from '../../components/images/logo_jivosite.png'
 import { Link } from "react-router-dom"
 
 
 function Header() {
+    const [showChat, setshowChat] = useState(false);
+    console.log({showChat});
+
+    function showChatText(){
+    //     setshowChat(!showChat)
+    //     console.log({showChat});
+    //     if(showChat){ return(
+    //             <div className="Header__hint">
+    //             <div className="Header__hint_container">
+    //             <img className="Jivo" src={Jivo} alt="Jivo" />
+    //             <p>Вы можете общаться с разработчиком на прямую ,
+    //     через чат “JIVO “ прикрепленный снизу(синиго цвета)
+    //     <br/>
+    //     А также вы можете через чат оформлять заказ , 
+    //     пишите в чат ХОЧУ САЙТ и вам отправят документ с 
+    //     образцом ТЗ(техническое задание)</p>
+    //             </div>
+    //             </div>
+    //         )
+    // }
+}
+
+
+
     return (
+        <>
     <div className="Header">
         <div className="Header__container">
         <div className="Header__logo">
@@ -14,14 +40,15 @@ function Header() {
         </div>
         <div className="Header__li">
         <ul>
-            <li><Link to="">Разработка сайтов</Link></li>
-            <li><Link to="">Портфолио</Link></li>
+            <li><Link to="/">Разработка сайтов</Link></li>
+            <li><Link to="portfolio">Портфолио</Link></li>
         </ul>
         </div>
         <div className="Header__connection">
         <div className="Header__conn">
         <div className="Header__conn_chat">
-        <img className="Chat" src={Chat} alt="Chat" />
+        <img className="Chat" src={Chat} alt="Chat" onClick={showChatText} />
+        {showChat}
         </div>
         <div className="Header__conn_tel">
         <img className="Tel" src={Tel} alt="Tel" />
@@ -31,6 +58,7 @@ function Header() {
         
         </div>
     </div>
+</> 
     );
 }
 

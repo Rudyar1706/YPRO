@@ -9,10 +9,10 @@ h1{
   color: #2D3469;
   font-size: 50px;
 }
-h4{
+h3,h4{
   color: #2D3469;
-  font-size: 18px;
 }
+
 p{
   color: #515469;
   font-size: 15px;
@@ -38,7 +38,7 @@ hr{
   border: 1px solid rgba(45, 52, 105, 0.1);
 }
 .Button{
-  width: 200px;
+  max-width: 200px;
   margin: 20px 0;
   padding: 10px 30px;
   background: rgba(45, 52, 105, 0.9);
@@ -55,6 +55,7 @@ body{
   background: url(./components/images/1586707438_51-p-krasivie-foni-s-gradientom-111.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: right;
 }
 .App{
   width: 100%;
@@ -142,9 +143,26 @@ color: #2D3469;
       }
     }
   }
+  &__hint{
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  left: 55%;
+  top: 50px;
+    & img{
+      width: 100px;
+    }
+    &_container{
+      width: 500px;
+      background: rgba( 255, 255, 255, 0.98 );
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 9.0px );
+    padding: 20px;
+    }
+  }
 }
 
-}
+
 
 
 
@@ -291,7 +309,51 @@ cursor: default;
 }
 }
   }
+  & .Portfolio__button{
+    width: 100%;
+    &__container{
+      width: 1180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  & .Portfolio{
+    width: 100%;
+    min-height: 100vh;
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+    &__container{
+      margin: 0 20px;
+      width: 1180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & h3{
+        margin: 15px 0;
+      }
+    }
+    &__site{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    & .Site{
+      width: 250px;
+      padding: 20px 10px 0 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
+
+
+}
+
   /*Footer*/
   .Footer{
     width: 100%;

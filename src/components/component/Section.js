@@ -52,7 +52,7 @@ return (
     <hr/>
 
     <div className="Text">
-    <h4>Дизайн сайта</h4>
+    <h3>Дизайн сайта</h3>
     <p>Проектирование пользовательских веб-интерфейсов для сайтов или веб-приложений.<br/><br/>
     <i>Эту услугу можно получить БЕСПЛАТНО, при заказе услуги разработка сайта*</i>
     </p>
@@ -69,7 +69,7 @@ return (
     <hr/>
     
     <div className="Text">
-    <h4>Разработка сайта</h4>
+    <h3>Разработка сайта</h3>
     <p>Основными этапами процесса являются веб-дизайн,
 вёрстка страниц, программирование на стороне клиента и сервера.
 
@@ -90,7 +90,7 @@ return (
         </div>  
         <div className="Points__plus">
         <div className="Center">
-        <h4>Почему выбирают нас</h4>
+        <h3>Почему выбирают нас</h3>
         {arrayPoints.map((arrayPoints, index) =>
             <div className="Points" key={index}>
 <span>{arrayPoints.id}</span><p>{arrayPoints.value}</p>
@@ -102,7 +102,7 @@ return (
 
 
     <div className="Stages__container">
-    <h4>Этапы разработки сайта</h4>  
+    <h3>Этапы разработки сайта</h3>  
     <div className="Stages">
         {arrayStages.map((arrayStages, index) =>
         <div className="Stage bg-blure">
@@ -110,6 +110,16 @@ return (
             </div>
         )}
         </div>
+    </div>
+
+    <div className="Portfolio__button">
+    <div className="Portfolio__button__container bg-blure">
+    <Link to="/portfolio">
+    <div className="Button">
+    Портфолио
+    </div>
+    </Link>
+</div>
     </div>
 
 
