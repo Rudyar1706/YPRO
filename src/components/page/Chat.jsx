@@ -1,12 +1,13 @@
 import React from 'react'
-import PlusSVG from '../../components/svg/fullWindow.svg'
+import FullWindow from '../../components/svg/fullWindow.svg'
+import MassButton from '../../components/svg/massageButton.svg'
 
 
 function Chat() {
 
     return (
         <div className="Chat">
-            <div className="Chat__container bg-blure">
+            <div className="Chat__container">
             <div className="Chat__header">
             <div className="Chat__header_block">
             <div className="User">
@@ -16,12 +17,16 @@ function Chat() {
                 <p>Вы: Имя</p>
                 </div>  
                 <div className="Chat-fullWindow">
-                <img className="PlusSVG" src={PlusSVG} alt="PlusSVG" />
+                <img className="FullWindow" src={FullWindow} alt="FullWindow" />
                 </div> 
     </div>
-    <div className="Chat__section">
+    <div className="Chat__dialogs">
     </div>
     <div className="Chat__input">
+        <form action="">
+        <input type="text" placeholder="Напишите сообщение..."/>
+        <button><img className="MassButton" src={MassButton} alt="MassButton" /></button>
+        </form>
     </div>
     </div>
     </div>
