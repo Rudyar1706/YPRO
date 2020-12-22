@@ -24,7 +24,7 @@ function Chat() {
     </div>
     <div className="Chat__input">
         <form action="">
-        <input type="text" placeholder="Напишите сообщение..."/>
+        <textarea type="text" placeholder="Напишите сообщение..."></textarea>
         <button><img className="MassButton" src={MassButton} alt="MassButton" /></button>
         </form>
     </div>
