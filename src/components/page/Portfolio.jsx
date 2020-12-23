@@ -8,6 +8,7 @@ function Portfolio() {
         {id: 2, nameSite: "pafix.by", text: "Сервис по ремонту мобильных устройств", url: "http://pafix.by/"},
         {id: 3, nameSite: "smart-service.by", text: "Сервис по ремонту электронных блоков управления", url: "http://smart-service.by/"},
     ]
+
     return (
         <div className="Section">
     <div className="Portfolio">

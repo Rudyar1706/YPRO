@@ -47,6 +47,42 @@
     }
 
 
+
+/*Chat*/
+.Chat{
+  height: 100vh;
+  margin: 20px 0;
+  &__container{
+    margin: 40px 20px;
+    & .Chat__header{
+      background: #ffffff;
+      &_block{
+        margin: 0 20px;
+        height: 100%;
+        & .User{
+        width: 100%;
+        }
+      }
+
+      .Chat__dialogs{
+        width: 100%;
+      }
+
+    .Chat__input{
+        & form{
+          padding: 0 30px;
+          width: 100%;
+        & textarea{
+          width: 100%;
+        }
+      }
+      }
+    }
+  }
+}
+
+
+
 }
 }
 

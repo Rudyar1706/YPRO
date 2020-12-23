@@ -1,9 +1,5 @@
-import Header from './components/component/Header'
-import Section from './components/component/Section'
-import Footer from './components/component/Footer'
 import { Route } from 'react-router-dom';
-import Portfolio from './components/page/Portfolio';
-import Chat from './components/page/Chat';
+import {Header, Section, Footer, Portfolio, Chat, ModelDevelopSite} from './import';
 
 function App() {
   return (
@@ -13,6 +9,7 @@ function App() {
 <Route exact path="/portfolio" component={Portfolio} />
 <Route exact path="/chat" component={Chat} />
 <Footer />
+<ModelDevelopSite />
     </div>
   );
 }
