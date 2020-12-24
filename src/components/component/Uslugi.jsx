@@ -36,7 +36,7 @@ return (
     </div>
 
     <Link to="/">
-    <div className="Button" onClick={props.showModalDevelopSite}>
+    <div className="Button" onClick={props.func}>
     Стоимость разработки
     </div>
     </Link>

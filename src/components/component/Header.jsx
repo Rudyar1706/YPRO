@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Logo from '../../components/svg/LOGOYPRO.svg'
 import Chat from '../../components/svg/comment.svg'
 import Tel from '../../components/svg/phone.svg'
