@@ -1,11 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {Close} from '../../import';
 
 
 function ModelDevelopSite() {
+    const [showModal, setShowModal] = useState(false);
+
+    const closeModalDevelopSite = () => setShowModal(false);
+    const showModalDevelopSite = () => setShowModal(true);
+
     return (
-        <div className="ModelDevelopSite">
-    <div className="ModelDevelopSite__container">
-        <h1>ehfeiohfofioe</h1>
+        <div className="ModalDevelopSite" show={showModal} onHide={closeModalDevelopSite}>
+    <div className="ModalDevelopSite__fixed">
+    <div className="ModalDevelopSite__container">
+        <div className="close">
+        <img className="Close" src={Close} alt="Close" onClick={showModalDevelopSite} />
+        </div>
+        <h4>Разработка сайтов</h4>
+        </div>
     </div>
     </div>
     );

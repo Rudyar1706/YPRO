@@ -2,7 +2,7 @@ import React from 'react'
 import {Uslug1svg, Uslug2svg, Link} from '../../import';
 
 
-function Uslugi() {
+function Uslugi(props) {
 return (
     <>
     <div className="Uslugi__container">
@@ -36,7 +36,7 @@ return (
     </div>
 
     <Link to="/">
-    <div className="Button">
+    <div className="Button" onClick={props.showModalDevelopSite}>
     Стоимость разработки
     </div>
     </Link>
