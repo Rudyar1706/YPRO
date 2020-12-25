@@ -1,28 +1,24 @@
-import React, {useState} from 'react'
-import {FullWindow, MassButton} from '../../import';
+import React from 'react'
+import {MassButton} from '../../import';
 // import IconAdmin from '../../components/images/4koBjuntPDA.jpg'
 
 function Chat() {
-
     return (
         <div className="Chat">
             <div className="Chat__container">
-            <div className="Chat__header">
-            <div className="Chat__header_block">
+            <div className="ChatBlock">
+            <div className="ChatBlock__header">
+            <div className="ChatBlock__header_block">
             <div className="User">
             <div className="User__Icon">
             <p>И</p>
                 </div> 
                 <p>Вы: Имя</p>
                 </div>  
-                <div className="Chat-fullWindow">
-                <img className="FullWindow" src={FullWindow} alt="FullWindow" />
-                </div> 
     </div>
-    <div className="Chat__dialogs">
+    <div className="ChatBlock__dialogs">
 
-        
-    <div className="Chat__dialogs-admin">
+    <div className="ChatBlock__dialogs-admin">
     <div className="Massage__admin">
 
     </div>
@@ -31,7 +27,7 @@ function Chat() {
     </div>
 
 
-    <div className="Chat__dialogs-user">
+    <div className="ChatBlock__dialogs-user">
     <div className="Icon__user">
         
         </div>
@@ -40,11 +36,12 @@ function Chat() {
     </div>
     </div>
     </div>
-    <div className="Chat__input">
+    <div className="ChatBlock__input">
         <form action="">
         <textarea type="text" placeholder="Напишите сообщение..." ></textarea>
         <button><img className="MassButton" src={MassButton} alt="MassButton" /></button>
         </form>
+    </div>
     </div>
     </div>
     </div>

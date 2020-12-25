@@ -1,8 +1,5 @@
 import React from 'react'
-import Logo from '../../components/svg/LOGOYPRO.svg'
-import Chat from '../../components/svg/comment.svg'
-import Tel from '../../components/svg/phone.svg'
-import { Link } from "react-router-dom"
+import {Link, ChatSVG, Logo, Tel} from '../../import';
 
 
 function Header() {
@@ -22,12 +19,12 @@ function Header() {
         </div>
         <div className="Header__connection">
         <div className="Header__conn">
-        <Link to="/chat">
+        <Link to="registration">
         <div className="Header__conn_chat">
-        <img src={Chat} alt="Chat"/>
+        <img src={ChatSVG} alt="ChatSVG"/>
         </div>
         </Link>
-        <Link to="">
+        <Link to="/">
         <div className="Header__conn_tel">
         <img src={Tel} alt="Tel" />
         </div>

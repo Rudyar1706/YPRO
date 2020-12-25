@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Uslug1svg, Uslug2svg, Link} from '../../import';
 
 
 function Uslugi(props) {
+    const [showPrice, setShowPrice] = useState('Стоимость разработки')
+
+    const funcShowPrice = () =>{
+        setShowPrice('70$')
+        setTimeout(() => setShowPrice('Стоимость разработки'), 5000);
+    }
 return (
     <>
     <div className="Uslugi__container">
@@ -12,13 +18,13 @@ return (
 
     <div className="Text">
     <h3>Дизайн сайта</h3>
-    <p>Проектирование пользовательских веб-интерфейсов для сайтов или веб-приложений.<br/><br/>
-    <i>Эту услугу можно получить БЕСПЛАТНО, при заказе услуги разработка сайта*</i>
+    <p>Дизайн сайта – это внешнее оформление, которое призвано, завлечь, заинтересовать посетителя.<br/><br/>
+    <i>Хочу дизайн сайта <b onClick={props.func}>БЕСПЛАНО</b></i>
     </p>
     </div>
     <Link to="/">
-    <div className="Button">
-    Стоимость разработки
+    <div className="Button" onClick={funcShowPrice}>
+{showPrice}
     </div>
     </Link>
 
@@ -32,12 +38,13 @@ return (
     <p>Основными этапами процесса являются веб-дизайн,
 вёрстка страниц, программирование на стороне клиента и сервера.
 
+
     </p>
     </div>
 
     <Link to="/">
     <div className="Button" onClick={props.func}>
-    Стоимость разработки
+    Узнать подробнее
     </div>
     </Link>
     </div>

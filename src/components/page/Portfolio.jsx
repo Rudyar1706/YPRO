@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 
 
 function Portfolio() {
@@ -19,11 +18,11 @@ function Portfolio() {
     <div className="Site bg-blure" key={arraySite.id}>
     <h4>{arraySite.nameSite}</h4>
     <p>{arraySite.text}</p>
-    <Link href={arraySite.url} target="_blank">
+    <a href={arraySite.url} target="_blank">
     <div className="Button">
     Посетить
     </div>
-    </Link>
+    </a>
     </div>)}
 
 

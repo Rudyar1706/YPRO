@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import Inst from '../../components/svg/instagram.svg'
 import Viber from '../../components/svg/viber.svg'
 import Vk from '../../components/svg/vk.svg'
@@ -13,16 +12,16 @@ function Footer() {
 <h4>Мы в соц. сетях </h4>
 <div className="Seti">
 <div className="block">
-<Link to="/"><img className="Inst" src={Inst} alt="Inst" /></Link>
+<a href="https://www.instagram.com/yourpromotion.by/?hl=ru"><img className="Inst" src={Inst} alt="Inst" /></a>
     </div>
     <div className="block">
-    <Link to="/"><img className="Viber" src={Viber} alt="Viber" /></Link>
+    <a href="viber://chat?number=+375(29)895-11-28"><img className="Viber" src={Viber} alt="Viber" /></a>
     </div>
     <div className="block">
-    <Link to="/"><img className="Vk" src={Vk} alt="Vk" /></Link>
+    <a href="https://vk.com/dimarudkovskiy"><img className="Vk" src={Vk} alt="Vk" /></a>
     </div>
     <div className="block">
-    <Link to="/"><img className="Telegram" src={Telegram} alt="Telegram" /></Link>
+    <a href="https://telegram.im/@<manager_yourpromotion>"><img className="Telegram" src={Telegram} alt="Telegram" /></a>
     </div>
     </div>
     </div>

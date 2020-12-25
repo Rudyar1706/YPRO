@@ -1,9 +1,10 @@
 import React from 'react'
-import {Welcome, Uslugi, Plus, Stages, Portfol} from '../../import';
+import {Welcome, Uslugi, Plus, Stages, Portfol, Footer} from '../../import';
 
 
 function Section(props) {
 return (
+    <>
     <div className="Section">
     <div className="Section__container">
 <Welcome />
@@ -13,6 +14,8 @@ return (
 <Portfol />
     </div>
     </div>
+    <Footer />
+    </>
     );
 }
 

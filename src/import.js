@@ -8,6 +8,10 @@ import PlusSVG from './components/svg/undraw_setup_wizard 1.svg'
 import FullWindow from './components/svg/fullWindow.svg'
 import MassButton from './components/svg/massageButton.svg'
 import Close from './components/svg/close.svg'
+
+import Logo from './components/svg/LOGOYPRO.svg'
+import ChatSVG from './components/svg/comment.svg'
+import Tel from './components/svg/phone.svg'
 /*Components*/
 import Header from './components/component/Header'
 import Section from './components/component/Section'
@@ -22,7 +26,9 @@ import ModelDevelopSite from './components/component/ModelDevelopSite'
 
 /*Page*/
 import Portfolio from './components/page/Portfolio';
+import Registration from './components/page/Registration';
 import Chat from './components/page/Chat';
 
 
-export {App, WelcomeSVG, Uslug1svg, Uslug2svg, PlusSVG, FullWindow, MassButton, Close, Link, Header, Section, Footer,  Welcome, Uslugi, Plus, Stages, Portfol, ModelDevelopSite, Portfolio, Chat}
+
+export {App, WelcomeSVG, Uslug1svg, Uslug2svg, PlusSVG, FullWindow, MassButton, Close,  Logo, ChatSVG, Tel, Link, Header, Section, Footer,  Welcome, Uslugi, Plus, Stages, Portfol, ModelDevelopSite, Portfolio, Chat, Registration}
